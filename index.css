@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+ box-sizing: border-box;
+}
+.container {
+   background-image: url("img/img-3.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container::before {
+   position: absolute;
+   content: "";
+   width: 100%;
+   height: 100vh;
+   background-color: rgb(0,0,0,0.7);
+}
+.container .card {
+  position: relative;
+  background-color: #ff574a;
+  text-align: center;
+  padding: 40px 40px 0;
+  border-radius: 20px;
+}
+.container .card img {
+  width: 300px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 7px;
+  margin-top: 20px;
+}
+.card .menu {
+  color: #fff;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  font-size: 25px;
+}
+.card .settings {
+  color: #fff;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  font-size: 25px;
+}
+.card h3 {
+  font-weight: 600;
+  color: #fff;
+  font-size: 22px;
+  margin: 40px 0 30px;
+}
+.card p {
+  color: #fafafa;
+  font-size: 18px;
+}
+.card .social-media {
+  padding: 50px 0 ;
+}
+.card .social-media .icon {
+  font-size: 30px;
+  color: #fff;
+  margin: 0 10px;
+}
+.more {
+  position: relative;
+  background-color: #fff;
+  padding: 80px 0;
+  margin: 0 -40px;
+  border-radius: 20px;
+}
+.more p {
+  color: #707070;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1.5;
+  margin-bottom: 30px;
+}
+.more .dow {
+  color: #ff574a;
+  font-weight: bold;
+  font-size: 25;
+}
+.card button {
+  position: relative;
+  z-index: 1;
+  margin-bottom: -20px;
+  color: #ff574a;
+  background: #fff;
+  padding: 20px 80px;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  box-shadow: 0 5px 10px #ff574a;
+  font-weight: 600;
+  font-size: 20px;
+}
